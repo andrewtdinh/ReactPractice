@@ -1,0 +1,29 @@
+{
+  "name": "bower.json",
+  "version": "0.0.1",
+  "homepage": "https://github.com/andrewtdinh/ReactPractice",
+  "authors": [
+    "Andrew Dinh <andrewdinh74@yahoo.com>"
+  ],
+  "description": "Practice React project",
+  "moduleType": [
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "React",
+    "practice"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.13.3"
+  }
+}
