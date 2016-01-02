@@ -14,6 +14,21 @@
       React.render(
         <p>This is rendered text.</p>,
         document.getElementById('example'))
+        
+      var GeneratedText = React.createClass({
+        render: function() {
+          return (
+            <p className="secondary">
+              Component-rendered text
+            </p>
+          );
+        }
+      });
+
+      React.render(
+        <GeneratedText />,
+        document.getElementById('example-2')
+      )
     </script>
   </body>
 
