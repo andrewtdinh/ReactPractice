@@ -3,11 +3,17 @@
 
   <head>
     <title>React Tutorial</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-beta1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.0-beta1/JSXTransformer.js"></script>
   </head>
 
   <body>
-    <div id="root"></div>
-    <script src="script.jsx" type="text/jsx"></script>
+    <div id="example"></div>
+    <script type="text/jsx">
+      React.render(
+        <p>This is rendered text.</p>,
+        document.getElementById('example'))
+    </script>
   </body>
 
 </html>
