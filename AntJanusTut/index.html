@@ -10,6 +10,7 @@
   <body>
     <div id="example"></div>
     <div id="example-2"></div>
+    <div id="example-3"></div>
     <script type="text/jsx">
       React.render(
         <p>This is rendered text.</p>,
@@ -29,6 +30,32 @@
         <GeneratedText />,
         document.getElementById('example-2')
       )
+      
+      var ContentText = React.createClass({
+        render: function() {
+          return (
+            <span>
+              Composed components rendered
+            </span>
+          );
+        }
+      });
+      
+      var SecondaryContent = React.createClass({
+        render: function() {
+          return (
+            <p className="secondary">
+            <ContentText />
+            </p>
+          );
+        }
+      })
+      
+      React.render(
+        <SecondaryContent />,
+        document.getElementById('example-3')
+      );
+
     </script>
   </body>
 
