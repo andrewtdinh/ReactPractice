@@ -56,36 +56,6 @@
         <SecondaryContent />,
         document.getElementById('example-3')
       );
-
-    </script>
-    <h3>Step 2:  Props</h3>
-    <div id='content-1'></div>
-    <script type='text/jsx'>
-      var SecondaryButton = React.createClass({
-        render: function() {
-          return (
-            <span className="button secondary">
-            {this.props.children}
-            </span>
-          )
-        }
-      });
-      
-      var ContentBlock = React.createClass({
-        render: function() {
-          return (
-            <SecondaryButton>
-            My button
-            </SecondaryButton>
-          );
-        }
-      });
-      
-      React.render(
-        <ContentBlock />,
-        document.getElementById('content-1')
-      )
-      
     </script>
   </body>
 
